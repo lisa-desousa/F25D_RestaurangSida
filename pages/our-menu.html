@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- länk till font awesome: -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- länk till google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+
+  <!-- länk till egna stylesheets -->
+  <link rel="stylesheet" href="../styles/general-style.css">
+  <link rel="stylesheet" href="../styles/our-menu-style.css">
+
+  <title>KINDRED BITES - our menu</title>
+</head>
+<body>
+<!-- nav är inuti header -->
+  <header>
+<!-- titel stor i mitten -->
+<a href="../index.html"><h1>KINDRED BITES</h1></a>
+ 
+    <nav>
+       <!-- nav-items utspridda under titel -->
+       <div class="nav-items">
+        <a id="nav-hours" href="/pages/hours.html">HOURS</a>
+        <a id="nav-menu" href="/pages/our-menu.html">OUR MENU</a>
+        <a id="nav-takeaway" href="/pages/takeaway.html">TAKEAWAY</a>
+        <a id="nav-about" href="../index.html#about">ABOUT US</a>
+       </div>
+      </nav>
+
+      <!-- Hamburgare knapp -->
+<div class="hamburger-menu">
+  <i class="fa-solid fa-bars"></i>
+</div>
+
+
+  </header>
+  
+  <!-- main blir olika på varje page, men de flesta har en image section -->
+<main>
+  <section class="front-image">
+    <img src="../images/our-menu-front.jpg" alt="hands sharing food">
+  </section>
+
+  <!-- obs! about us i nav bar länkar hit! -->
+  <article class="menu-container">
+    <div class="lunch-menu">
+      <div class="lunch-image-container">
+        <img src="../images/lunch-buffet.jpg" alt="#">
+      </div>
+  
+      <div class="lunch-info-container">
+        <h2 class="lunch-title">LUNCH BUFFET <button class="toggle">
+          HIDE INFO
+          <!-- byt text till show info vid klick eller två knappar? -->
+        </button></h2>
+        
+      <div class="lunch-info">
+        <h3>Monday - Friday | 11:30 AM - 2:30 PM</h3>
+        <p>Enjoy a vibrant and ever-changing selection of globally inspired dishes at our lunch buffet. We offer a variety of fresh salads, soups, signature dishes and desserts, ensuring a delicious and satisfying meal for every guest.</p>
+        <h4>What's Included?</h4>
+        <ul class="buffet-info">
+          <li><strong>Fresh Salad Bar</strong> - Seasonal greens, house-made dressings and toppings</li>
+          <li><strong>Soup of the Day</strong> - Rotating options like roasted tomato bisque or miso soup</li>
+          <li><strong>Signature Dishes</strong> - Some of our crowd favorites from the à la carte menu, including daily specials</li>
+          <li><strong>Dessert Selection</strong> - A sweet finish with mini portions of classic desserts</li>
+        </ul>
+        <ul class="buffet-prices">
+          <h4>Prices:</h4>
+          <li>Standard Buffet: $18 / person <em>(includes water, coffee, and tea)</em></li>
+          <li>Buffet + Soft Drink: $21 / person <em>(includes any soft drink or iced tea)</em></li>
+          <li>Buffet + Wine/Beer: $25 / person <em>(includes one glass of house wine or draft beer)</em></li>
+        </ul>
+
+      </div>
+      </div>
+    </div>
+
+    <div class="dinner-menu">
+<!-- se instruktioner på den där js projekt videon? flikar typ -->
+ <!-- DESSA SKA VA MINDRE ÄN DE ANDRA -->
+  <h2>OUR MENU</h2>
+      <div class="filters">
+        <button class="filter-btn active" id="showall">SHOW ALL</button>
+        <button class="filter-btn" id="starters">STARTERS</button>
+        <button class="filter-btn" id="mains">MAINS</button>
+        <button class="filter-btn" id="desserts">DESSERTS</button>
+      </div>
+
+      <div class="menu-grid">
+        <div class="starters category">
+          <h3>STARTERS</h3>
+
+          <div class="starters-dishes">
+            <div class="dish">
+              <p class="dish-name">Truffle Parmesan Fries</p>
+              <p class="dish-info">Crispy fries with truffle oil, parmesan, and garlic aioli</p>
+              <div class="dish-price">8$</div>
+            </div>
+  
+            <div class="dish">
+              <p class="dish-name">Spicy Garlic Shrimp</p>
+              <p class="dish-info">Sautéed shrimp in a chili-garlic butter sauce</p>
+              <div class="dish-price">12$</div>
+            </div>
+  
+            <div class="dish">
+              <p class="dish-name">Bruschetta Trio</p>
+              <p class="dish-info">Classic tomato-basil, mushroom ricotta, and smoked salmon cream cheese</p>
+              <div class="dish-price">10$</div>
+            </div>
+
+            <div class="dish">
+              <p class="dish-name">Korean BBQ Cauliflower</p>
+              <p class="dish-info">Crispy cauliflower tossed in sweet and spicy gochujang sauce</p>
+              <div class="dish-price">9$</div>
+            </div>
+          </div>  
+        </div>
+
+        <div class="mains category">
+          <h3>MAINS</h3>
+
+          <div class="mains-dishes">
+            <div class="dish">
+              <p class="dish-name">Harissa Chicken Skewers</p>
+              <p class="dish-info">Grilled chicken with harissa yogurt sauce and warm pita</p>
+              <div class="dish-price">16$</div>
+            </div>
+  
+            <div class="dish">
+              <p class="dish-name">Miso Glazed Salmon</p>
+              <p class="dish-info">Served with sesame rice and bok choy</p>
+              <div class="dish-price">20$</div>
+            </div>
+  
+            <div class="dish">
+              <p class="dish-name">Vegetarian Paella</p>
+              <p class="dish-info">Saffron-infused rice with roasted vegetables and smoked paprika</p>
+              <div class="dish-price">17$</div>
+            </div>
+
+            <div class="dish">
+              <p class="dish-name">Slow-Cooked Beef Ragu</p>
+              <p class="dish-info"> Rich tomato-braised beef over pappardelle pasta</p>
+              <div class="dish-price">18$</div>
+            </div>
+        </div>
+      </div>
+
+        <div class="desserts category">
+          <h3>DESSERTS</h3>
+
+          <div class="desserts-dishes">
+            <div class="dish">
+              <p class="dish-name">Molten Chocolate Lava Cake</p>
+              <p class="dish-info">Served with vanilla bean ice cream</p>
+              <div class="dish-price">9$</div>
+            </div>
+  
+            <div class="dish">
+              <p class="dish-name">Mango Sticky Rice</p>
+              <p class="dish-info">Sweet coconut-infused rice with fresh mango slices</p>
+              <div class="dish-price">8$</div>
+            </div>
+  
+            <div class="dish">
+              <p class="dish-name">Pistachio Baklava</p>
+              <p class="dish-info">Layers of flaky phyllo with honey and pistachios</p>
+              <div class="dish-price">7$</div>
+            </div>
+
+            <div class="dish">
+              <p class="dish-name">Tiramisu</p>
+              <p class="dish-info">Espresso-soaked ladyfingers with mascarpone and cocoa</p>
+              <div class="dish-price">9$</div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+  </article>
+</main>
+
+  <footer>
+<!-- contact är högst upp, centrerad -->
+    <div class="contact-container">
+
+<div class="social-media-icons">
+  <i class="fa-brands fa-square-facebook icon"></i>
+  <i class="fa-brands fa-instagram icon"></i>
+  <i class="fa-brands fa-tiktok icon"></i>
+</div>
+<div class="location-container">
+  <p class="adress">6 Fake Street, 38495 Fakeville</p>
+  <p class="phone">+46 707 00 00 00</p>
+</div>
+    </div>
+
+    <!-- work with us + nevsletter längst ner utspritt -->
+     <div class="info-container">
+      <p class="work-with-us">WORK WITH US</p>
+      <p class="newsletter">NEWSLETTER</p>
+     </div>
+
+  </footer>
+
+  <script src="../javascript/our-menu.js"></script>
+  <script src="../javascript/hamburger-menu.js"></script>
+</body>
+</html>
